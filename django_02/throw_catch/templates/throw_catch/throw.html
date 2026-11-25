@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}
+  <title>서버로 데이터 보내는 페이지</title>
+{% endblock title %}
+
+{% block content %}
+  <form action="/catch/" method="GET">
+    <label for="message">서버로 전송할 데이터 : </label>
+    <input type="text" name="message" id="message">
+    <input type="submit" value="전송">
+  </form>
+
+{% endblock content %}
